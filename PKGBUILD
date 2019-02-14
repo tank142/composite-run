@@ -4,8 +4,7 @@
 pkgname=composite-run
 pkgver=2
 pkgrel=1
-arch=('i686' 'x86_64')
-url='https://github.com/lxqt/compton-conf'
+arch=('any')
 license=('GPL3')
 
 depends=('xorg-xdriinfo')
