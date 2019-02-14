@@ -1,0 +1,5 @@
+opt="--dbus --unredir-if-possible --no-fading-openclose --shadow-exclude fullscreen --focus-exclude fullscreen"
+radeon="compton --xrender-sync-fence --vsync opengl-mswc --glx-swap-method 3 $opt"
+i965="compton --glx-swap-method 3 --xrender-sync-fence $opt"
+nvidia="compton --glx-swap-method 3 --backend glx --xrender-sync-fence $opt"
+nouveau="exit 255"

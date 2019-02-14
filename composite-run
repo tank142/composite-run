@@ -1,0 +1,22 @@
+#!/bin/bash
+source /etc/default/composite
+case `xdriinfo` in
+	*radeon*)
+		$radeon $@
+	;;
+	*i965*)
+		$i965 $@
+	;;
+	*nouveau*)
+		$nouveau $@
+	;;
+	*nvidia*)
+		$nvidia $@
+	;;
+	*not*)
+		exit
+	;;
+	*old*)
+		exit
+	;;
+esac
