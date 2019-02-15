@@ -2,7 +2,7 @@
 # Contributor: Thomas Nordenmark <t.nordenmark@gmail.com>
 
 pkgname=composite-run
-pkgver=2
+pkgver=3
 pkgrel=1
 arch=('any')
 license=('GPL3')

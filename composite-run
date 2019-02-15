@@ -2,16 +2,16 @@
 source /etc/default/composite
 case `xdriinfo` in
 	*radeon*)
-		$radeon $@
+		exec $radeon $@
 	;;
 	*i965*)
-		$i965 $@
+		exec $i965 $@
 	;;
 	*nouveau*)
-		$nouveau $@
+		exec $nouveau $@
 	;;
 	*nvidia*)
-		$nvidia $@
+		exec $nvidia $@
 	;;
 	*not*)
 		exit
